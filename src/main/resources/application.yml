@@ -1,0 +1,9 @@
+spring:
+  kafka:
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      bootstrap-servers: 192.168.0.87:9092
+    consumer:
+      group-id: my-group # group id
+      bootstrap-servers: 192.168.0.87:9092
